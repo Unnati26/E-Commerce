@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ecommerce | About us</title>
+
+
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+    </head>
+    <body>
+        <nav class="nav nav_top">
+            <div class="logo">
+                <a href="index.html"><img src="images/logo1.png" width="150"></a>
+            </div>
+            <div class="nav_side">
+                <a href="about.html">About Us</a>
+                <a href="service.html">Services</a>
+                <a href="blog.html">Blogs</a>
+                <a href="contact.html">Contact</a>
+                <a href=" ">Login/Register</a>
+            </div>
+        </nav>
+        <div class="about_us">
+            <h2>About Us</h2>
+            <div class="about_content">
+                <p>Furniture is amongst the most crucial elements of a home and more often than not a true reflection of the people living in it. From the style of bed to the colour of the chairs, every little detail makes a massive impact, which is why choosing the right furniture for your home is essential. Tired of searching for furniture shop near me in the search engine of your choice and not finding substantial results? We have just the solution for you. Urban Ladder, an online furniture store, is home to exceptional furniture options for every part of your home including the bedroom, living room, dining room, and more. Trust Urban Ladder with your home furniture needs and enjoy access to premium furniture made from the highest quality materials. When you shop for furniture online from Urban Ladder, you’re assured of a durable product that’ll add immense value to your interior decor.</p>
+                 <p>At Urban Ladder, we take our customers’ needs very seriously. A team of furniture designers work tirelessly to craft fresh new furniture designs that cater to the requirements of today’s homeowner flawlessly. We take design aesthetics equally seriously which is why we have furniture options available in different aesthetics including classic, modern, mid-century, boho chic, Scandanavian, industrial, and many more. Buy high-quality furniture for your home without worrying about overspending since our prices can be best described as reasonable. If you’re setting up a home office, you can find the perfect option in our range of study tables. Need a coffee table for your living room? Urban Ladder has got you covered.</p>
+            </div>
+            <hr>
+            <h2>Our Mission</h2>
+            <p>Online furniture sites offer you a wide variety of options to choose from. You can browse many designs, categories, sizes, functionalities and colours, all at your convenience. Why follow fixed timings when you can browse whenever you want, wherever you are? Shops cannot display more than a fixed number of designs – a constraint never faced digitally. While browsing furniture online, India shows a clear preference for clean, contemporary designs. You can find many such ranges on our website.
+
+                Yet another advantage of selecting furniture online is that a physical space can never exhibit enough categories or sizes. When you buy furniture online, you can see the features, benefits, and functionality of each product clearly. No more relying on the staff to remember and convey every point – however big or small. You can also sort the products using some parameter, or apply filters as per your needs, compare as many options as you want (without feeling awkward), and add your favourites to your wishlist.
+                
+                While looking for the best place to buy furniture online, India prefers our range without doubt. Whenever you want to buy furniture online, it’s worthwhile to check our offerings first. We are sure you’ll find what you were looking for. You can also buy furniture by room, as every living space has distinct requirements – in terms of occupancy, functions, space, and budget. From opulent, intricate designs for large areas to versatile, multifunction designs for lesser square feet, we have it all.</p>
+        </div>
+        <div class="feed">
+            <h2>Write a review</h2>
+            <div class="feed_form">
+                <form name="submit-googlesheet" method="post">
+                     <input type="text" name="Name" placeholder="Name"><br>
+                     <input type="email" name="Email" placeholder="Email ID"><br>
+                     <input type="number" name="Number" placeholder="Contact Number"><br>
+                     <textarea rows="5" cols="7" name="Review" placeholder="Write your review"></textarea><br>
+                     <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+        <footer>
+            <div class="footer_logo">
+                <a href="index.html"><img src="logo1.png" width="150"></a>
+            </div>
+            <div class="pages">
+                <h3>Pages</h3>
+                <a href="about.html">About Us</a>|
+                <a href="service.html">Services</a>|
+                <a href="blog.html">Blogs</a>|
+                <a href="">Login</a>|
+                <a href="">Sign Up</a>
+            </div>
+            <div class="doc">
+                <h3>Documents</h3>
+                <a href="">Privacy Policy</a>|
+                <a href="">Terms of Use</a>|
+                <a href="">Refund Policy</a>
+            </div>
+            <div class="social">
+                <h3>Follow Us</h3>
+                <a href="https://www.facebook.com/urbanladder/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                <a href="https://www.linkedin.com/company/urban-ladder/?originalSubdomain=in" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                <a href="https://www.instagram.com/urbanladder/?hl=en" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                <a href="https://twitter.com/UrbanLadder?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            </div>
+            <div class="contact">
+                <h3>Contact Us</h3>
+                <a href="https://api.WhatsApp.com/send?phone=+918046666777" target="_blank"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+                <a href="tel: +918046666777"><i class="fa fa-phone" aria-hidden="true"></i></a>
+                <a href="mailto: hello@urbanladder.com"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
+                
+            </div>
+            <hr>
+            <p>Copyright &copy; 2022 Urban Ladder. All rights reserved </p>
+        </footer>
+        
+<script type="text/javascript">
+    const scriptURL =
+        'https://script.google.com/macros/s/AKfycbzW2zyG-jH7KluDeuH9bGk4pTXNKB8CZVsD05_bevm7JVq58c5ZIXuUAkdIN8wPVNx9xw/exec'
+    const form = document.forms['submit-googlesheet']
+ 
+    form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, {
+                method: 'POST',
+                body: new FormData(form)
+            })
+            .then(response => alert(
+                "Thanks for you valuable feedback!!!"))
+            .catch(error => console.error('Error!', error.message))
+    })
+ 
+ </script>
+    </body>
+ 
+        

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ecommerce | Service</title>
+
+
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+    </head>
+    <body>
+        <nav class="nav nav_top">
+            <div class="logo">
+                <a href="index.html"><img src="images/logo1.png" width="150"></a>
+            </div>
+            <div class="nav_side">
+                <a href="about.html">About Us</a>
+                <a href="service.html">Services</a>
+                <a href="blog.html">Blogs</a>
+                <a href="contact.html">Contact</a>
+                <a href=" ">Login/Register</a>
+            </div>
+        </nav>
+        <div class="product" style="padding-top: 100px;">
+            <h2>OUR PRODUCTS</h2>
+            <div class="product_container" style="padding-bottom: 50px;">
+                <div class="item">
+                    <div class="item_img">
+                        <img src="images/image2.jpg">
+                    </div>
+                    <div class="item_content">
+                        <h3>Sofa</h3>
+                        <p>Buy Sofa set online upto 60% OFF - Latest sofa set for Livingroom. Shop from a wide range of sofa design at the best price in India at Royaloak.</p>
+                         <a href=" ">Buy Now</a>
+                    </div>
+                </div>
+            
+                <div class="item">
+                    <div class="item_img">
+                        <img src="images/image7.jpg">
+                    </div>
+                    <div class="item_content">
+                        <h3>Mattress</h3>
+                        <p>Order a Sleepwell Mattress & Get Delivered at Your Home with Sanitized Packaging for Free. Get your Mattress Delivered directly at your home in Easy Steps.</p>
+                         <a href=" ">Buy Now</a>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item_img">
+                        <img src="images/image6.jpg">
+                    </div>
+                    <div class="item_content">
+                        <h3>Wooden Chairs</h3>
+                        <p>Shop from wide range of wooden chairs crafted from high-quality Sheesham wood for every room in the house.</p>
+                         <a href=" ">Buy Now</a>
+                    </div>
+                </div>
+                
+            </div>
+            
+        </div>
+        <div class="feed">
+            <h2>Write a review</h2>
+            <div class="feed_form">
+                <form name="submit-googlesheet" method="post">
+                     <input type="text" name="Name" placeholder="Name"><br>
+                     <input type="email" name="Email" placeholder="Email ID"><br>
+                     <input type="number" name="Number" placeholder="Contact Number"><br>
+                     <textarea rows="5" cols="7" name="Review" placeholder="Write your review"></textarea><br>
+                     <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+        <footer>
+            <div class="footer_logo">
+                <a href="index.html"><img src="logo1.png" width="150"></a>
+            </div>
+            <div class="pages">
+                <h3>Pages</h3>
+                <a href="about.html">About Us</a>|
+                <a href="service.html">Services</a>|
+                <a href="blog.html">Blogs</a>|
+                <a href="">Login</a>|
+                <a href="">Sign Up</a>
+            </div>
+            <div class="doc">
+                <h3>Documents</h3>
+                <a href="">Privacy Policy</a>|
+                <a href="">Terms of Use</a>|
+                <a href="">Refund Policy</a>
+            </div>
+            <div class="social">
+                <h3>Follow Us</h3>
+                <a href="https://www.facebook.com/urbanladder/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                <a href="https://www.linkedin.com/company/urban-ladder/?originalSubdomain=in" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                <a href="https://www.instagram.com/urbanladder/?hl=en" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                <a href="https://twitter.com/UrbanLadder?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            </div>
+            <div class="contact">
+                <h3>Contact Us</h3>
+                <a href="https://api.WhatsApp.com/send?phone=+918046666777" target="_blank"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+                <a href="tel: +918046666777"><i class="fa fa-phone" aria-hidden="true"></i></a>
+                <a href="mailto: hello@urbanladder.com"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
+                
+            </div>
+            <hr>
+            <p>Copyright &copy; 2022 Urban Ladder. All rights reserved </p>
+        </footer>
+        
+<script type="text/javascript">
+    const scriptURL =
+        'https://script.google.com/macros/s/AKfycbzW2zyG-jH7KluDeuH9bGk4pTXNKB8CZVsD05_bevm7JVq58c5ZIXuUAkdIN8wPVNx9xw/exec'
+    const form = document.forms['submit-googlesheet']
+ 
+    form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, {
+                method: 'POST',
+                body: new FormData(form)
+            })
+            .then(response => alert(
+                "Thanks for you valuable feedback!!!"))
+            .catch(error => console.error('Error!', error.message))
+    })
+ 
+ </script>
+    </body>
+ 
